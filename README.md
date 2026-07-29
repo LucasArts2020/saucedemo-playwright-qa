@@ -1,5 +1,7 @@
 # SauceDemo Playwright QA Portfolio
 
+[![Playwright Tests](https://github.com/LucasArts2020/saucedemo-playwright-qa/actions/workflows/playwright.yml/badge.svg)](https://github.com/LucasArts2020/saucedemo-playwright-qa/actions/workflows/playwright.yml)
+
 End-to-end login test suite for [SauceDemo](https://www.saucedemo.com/), built with Playwright and TypeScript.
 
 The project exercises positive, negative, boundary, usability, and session-security scenarios. Each test contains explicit assertions for the expected URL, interface state, or error message.
@@ -9,10 +11,12 @@ The project exercises positive, negative, boundary, usability, and session-secur
 Latest verified local execution:
 
 ```text
-20 passed (50.3s)
+20 passed (33.6s)
 Browser: Chromium
 Workers: 1
 ```
+
+![Playwright HTML report showing 20 passed](assets/playwright-report-20-passed.png)
 
 ## Test coverage
 
@@ -93,6 +97,11 @@ If PowerShell blocks the `npm.ps1` or `npx.ps1` wrappers, use `npm.cmd` and `npx
 
 ```text
 .
+|-- .github/
+|   `-- workflows/
+|       `-- playwright.yml
+|-- assets/
+|   `-- playwright-report-20-passed.png
 |-- tests/
 |   `-- login.spec.ts
 |-- playwright.config.ts
